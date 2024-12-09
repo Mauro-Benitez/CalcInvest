@@ -1,0 +1,6 @@
+@CalcInvest.API_HostAddress = http://localhost:5193
+
+GET {{CalcInvest.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
