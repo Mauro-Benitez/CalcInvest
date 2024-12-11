@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcInvest.API", "CalcInvest.API\CalcInvest.API.csproj", "{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcInvest.API", "CalcInvest.API\CalcInvest.API.csproj", "{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcInvest.Core", "CalcInest.Core\CalcInvest.Core.csproj", "{234B82EA-92AE-46CE-BC59-A36CAF19CF82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcInvest.Application", "CalcInvest.Application\CalcInvest.Application.csproj", "{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcInvest.Infraestructure", "CalcInvest.Infraestructure\CalcInvest.Infraestructure.csproj", "{F6EA96B2-2652-41A7-B411-9461AF2A0B3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcInvest.Core", "CalcInvest.Core\CalcInvest.Core.csproj", "{135CE3B8-28F3-4E30-BF78-C09267C65534}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}.Release|Any CPU.Build.0 = Release|Any CPU
-		{234B82EA-92AE-46CE-BC59-A36CAF19CF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{234B82EA-92AE-46CE-BC59-A36CAF19CF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{234B82EA-92AE-46CE-BC59-A36CAF19CF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{234B82EA-92AE-46CE-BC59-A36CAF19CF82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6EA96B2-2652-41A7-B411-9461AF2A0B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6EA96B2-2652-41A7-B411-9461AF2A0B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6EA96B2-2652-41A7-B411-9461AF2A0B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6EA96B2-2652-41A7-B411-9461AF2A0B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135CE3B8-28F3-4E30-BF78-C09267C65534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135CE3B8-28F3-4E30-BF78-C09267C65534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135CE3B8-28F3-4E30-BF78-C09267C65534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135CE3B8-28F3-4E30-BF78-C09267C65534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
