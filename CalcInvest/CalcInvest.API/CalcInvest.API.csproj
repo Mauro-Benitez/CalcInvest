@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\CalcInvest.Application\CalcInvest.Application.csproj" />
+    <ProjectReference Include="..\CalcInvest.Core\CalcInvest.Core.csproj" />
   </ItemGroup>
 
 </Project>

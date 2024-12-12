@@ -17,14 +17,25 @@
             TempoMeses = meses;
         }
 
-        double CalcularJurosSimples()
+        public double CalcularJurosSimples()
         {
 
-            double taxaDeJuros = TaxaDeJuros.Porcentagem;
+            if(TaxaDeJuros.Tipo == "Mensal" || TaxaDeJuros.Tipo == "mensal")
+            {
+                double taxaDeJuros = TaxaDeJuros.Porcentagem/100;
 
 
-            ValorFinal = CapitalInicial * taxaDeJuros * TempoMeses;
+                ValorFinal = CapitalInicial * taxaDeJuros * TempoMeses;
 
+
+                return ValorFinal;
+            }
+
+            double taxaDeJurosMensal = TaxaDeJuros.Porcentagem / 12;
+
+            double taxaDeJursoFinal = taxaDeJurosMensal/100;
+
+            ValorFinal = CapitalInicial * taxaDeJursoFinal * TempoMeses;
 
             return ValorFinal;
         }

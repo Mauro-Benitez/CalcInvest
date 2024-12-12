@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CalcInvest.Core.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,14 @@ namespace CalcInvest.Core
     public class TaxaDeJuros
     {
         public double Porcentagem { get; set; }
-        public int TempoMeses { get; set; }
+        public string Tipo { get; set; }      
 
-        public TaxaDeJuros(double porcentagem, int meses) 
+        public TaxaDeJuros(double porcentagem, string tipo) 
         {
-
-            TempoMeses = meses;
-
+            Tipo = tipo;
             Porcentagem = porcentagem;
         }
+
+     
     }
 }
