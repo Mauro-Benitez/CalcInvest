@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CalcInvest.Core\CalcInvest.Core.csproj" />
+  </ItemGroup>
+
 </Project>

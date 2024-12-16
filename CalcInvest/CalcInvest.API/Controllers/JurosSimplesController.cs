@@ -1,4 +1,5 @@
 ﻿using CalcInvest.Application;
+using CalcInvest.Application.Services;
 using CalcInvest.Core;
 using CalcInvest.Core.Enum;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,14 @@ namespace CalcInvest.API.Controllers
     [Route("[controller]")]
     public class JurosSimplesController : Controller
     {
+
+        private readonly IJurosSimples _JurosSimples;
+
+        public JurosSimplesController(IJurosSimples jurosSimples)
+        {
+            _JurosSimples = jurosSimples;
+        }
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -16,20 +25,9 @@ namespace CalcInvest.API.Controllers
         {
             if (jurosSimples == null) return BadRequest();
 
-            var taxaDeJuros = new TaxaDeJuros(
-                jurosSimples.TaxaDeJuros,
-                jurosSimples.AnualouMensal
-                );
+            var result = _JurosSimples.CalcularJurosSimples(jurosSimples);
 
-            var calcJurosSimples = new CalcJurosSimples(
-                jurosSimples.CapitalInicial,
-                taxaDeJuros,
-                jurosSimples.TempoMeses
-                );
-
-            var result = calcJurosSimples.CalcularJurosSimples();
-
-            return Ok(result.ToString("f2"));
+            return Ok(result);
         }
     }
 }

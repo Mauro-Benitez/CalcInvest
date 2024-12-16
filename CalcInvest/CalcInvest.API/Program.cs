@@ -1,3 +1,4 @@
+using CalcInvest.Application.Services;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ITempDataDictionaryFactory, TempDataDictionaryFactory>();
-
+builder.Services.AddScoped<IJurosSimples, JurosSimplesService>();
 
 
 var app = builder.Build();

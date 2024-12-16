@@ -113,7 +113,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcInvest.Core.csproj": {
+                "projectPath": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcInvest.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
