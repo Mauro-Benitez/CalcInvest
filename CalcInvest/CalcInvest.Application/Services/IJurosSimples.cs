@@ -11,6 +11,8 @@ namespace CalcInvest.Application.Services
     {
         public JurosSimplesOutput CalcularJurosSimples(JurosSimplesDTO jurosSimplesDTO);
 
+        public List<EvolucaoJurosSimplesOutput> EvolucaoJuros (JurosSimplesDTO jurosSimplesDTO, int meses);
+
 
     }
 }

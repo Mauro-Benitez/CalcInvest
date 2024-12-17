@@ -33,5 +33,30 @@ namespace CalcInvest.Application.Services
 
             
         }
+
+        public List<EvolucaoJurosSimplesOutput> EvolucaoJuros(JurosSimplesDTO jurosSimplesDTO, int meses)
+        {
+            var result = new List<EvolucaoJurosSimplesOutput>();
+
+            for (int i = 1; i <= meses; i++)
+            {
+                jurosSimplesDTO.TempoMeses = i;
+                var jurosSimples = CalcularJurosSimples(jurosSimplesDTO);
+                var valorTotal = jurosSimplesDTO.CapitalInicial + jurosSimples.TotalemJuros;
+
+                result.Add(
+                    new EvolucaoJurosSimplesOutput
+                    {
+                        TempoMeses = i,
+                        JurosAcumulados = jurosSimples.TotalemJuros,
+                        Total = valorTotal
+                    });
+
+
+            }
+
+            return result;
+
+        }
     }
 }
