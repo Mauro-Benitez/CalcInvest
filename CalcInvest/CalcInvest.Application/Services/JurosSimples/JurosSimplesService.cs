@@ -1,4 +1,4 @@
-﻿using CalcInvest.Application.Output;
+﻿using CalcInvest.Application.Output.JurosSimples;
 using CalcInvest.Core;
 using System;
 using System.Collections.Generic;
@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalcInvest.Application.Services
+namespace CalcInvest.Application.Services.JurosSimples
 {
     public class JurosSimplesService : IJurosSimples
     {
         public JurosSimplesOutput CalcularJurosSimples(JurosSimplesDTO jurosSimples)
-        {            
+        {
 
             var taxaDeJuros = new TaxaDeJuros(
                 jurosSimples.TaxaDeJuros,
@@ -28,10 +28,8 @@ namespace CalcInvest.Application.Services
 
             var output = new JurosSimplesOutput(jurosSimples.CapitalInicial, result);
 
-            
             return output;
 
-            
         }
 
         public List<EvolucaoJurosSimplesOutput> EvolucaoJuros(JurosSimplesDTO jurosSimplesDTO, int meses)
@@ -51,10 +49,7 @@ namespace CalcInvest.Application.Services
                         JurosAcumulados = jurosSimples.TotalemJuros,
                         Total = valorTotal
                     });
-
-
             }
-
             return result;
 
         }

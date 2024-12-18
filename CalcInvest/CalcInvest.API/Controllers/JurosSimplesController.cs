@@ -1,6 +1,6 @@
 ﻿using CalcInvest.Application;
-using CalcInvest.Application.Output;
-using CalcInvest.Application.Services;
+using CalcInvest.Application.Output.JurosSimples;
+using CalcInvest.Application.Services.JurosSimples;
 using CalcInvest.Core;
 using CalcInvest.Core.Enum;
 using Microsoft.AspNetCore.Mvc;
@@ -19,10 +19,9 @@ namespace CalcInvest.API.Controllers
             _JurosSimples = jurosSimples;
         }
 
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult Calc([FromBody] JurosSimplesDTO jurosSimples)
+        [HttpPost("Calcular")]
+        [ProducesResponseType(StatusCodes.Status200OK)]        
+        public ActionResult JurosSimples([FromBody] JurosSimplesDTO jurosSimples)
         {
             if (jurosSimples == null) return BadRequest();
 
@@ -33,9 +32,8 @@ namespace CalcInvest.API.Controllers
 
 
 
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [HttpPost("EvolucaoJuros")]
+        [ProducesResponseType(StatusCodes.Status200OK)]        
         public ActionResult<List<EvolucaoJurosSimplesOutput>> JurosSimplesEvolucao([FromBody] JurosSimplesDTO jurosSimples)
         {
             if (jurosSimples == null) return BadRequest();

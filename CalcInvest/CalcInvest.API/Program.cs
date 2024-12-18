@@ -1,4 +1,4 @@
-using CalcInvest.Application.Services;
+using CalcInvest.Application.Services.JurosSimples;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 var builder = WebApplication.CreateBuilder(args);

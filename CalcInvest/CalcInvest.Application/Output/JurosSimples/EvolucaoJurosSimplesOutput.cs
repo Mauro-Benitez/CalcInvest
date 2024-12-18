@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalcInvest.Application.Output
+namespace CalcInvest.Application.Output.JurosSimples
 {
     public class EvolucaoJurosSimplesOutput
     {
 
-        public int TempoMeses { get; set; } 
+        public int TempoMeses { get; set; }
         public double JurosAcumulados { get; set; } // Juros acumulados até o período
         public double Total { get; set; } // Montante total no período
 

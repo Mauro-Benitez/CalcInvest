@@ -10,4 +10,9 @@
     <ProjectReference Include="..\CalcInvest.Core\CalcInvest.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Output\JurosCompostos\" />
+    <Folder Include="Services\JurosCompostos\" />
+  </ItemGroup>
+
 </Project>

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalcInvest.Application.Output
+namespace CalcInvest.Application.Output.JurosSimples
 {
     public class JurosSimplesOutput
-    {      
+    {
 
         public double ValorInicial { get; set; }
 
