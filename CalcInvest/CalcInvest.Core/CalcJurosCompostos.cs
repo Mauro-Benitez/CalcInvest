@@ -29,22 +29,28 @@ namespace CalcInvest.Core
 
         public double CalcularJurosCompostos()
         {
+            double taxaDeJurosFinal;
             if (TaxaDeJuros.Tipo == "Mensal" || TaxaDeJuros.Tipo == "mensal")
             {
-                 double taxaDeJuros = TaxaDeJuros.Porcentagem/100;
-
-
-                double MontanteIncial = CapitalInicial * Math.Pow(1 + taxaDeJuros, TempoMeses);
-
-                double MontanteAportes = CapitalInicial * (Math.Pow(1 + taxaDeJuros, TempoMeses) - 1) / taxaDeJuros;
-
-
-
-                return MontanteIncial * MontanteAportes;
+                taxaDeJurosFinal = TaxaDeJuros.Porcentagem / 100;                
+            }
+            else
+            {               
+                taxaDeJurosFinal = Math.Pow(1 + TaxaDeJuros.Porcentagem / 100, 1.0 / 12) - 1;
             }
 
+            double montante = CapitalInicial;
+            double totalInvestido = CapitalInicial;
 
-            return 0;
+            for (int i = 0; i < TempoMeses; i++)
+            {
+                montante += montante * taxaDeJurosFinal;
+                montante += ValorMensal;
+                totalInvestido += ValorMensal;
+            }
+
+            return montante - totalInvestido;
+
         }
 
 
