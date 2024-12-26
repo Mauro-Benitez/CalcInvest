@@ -9,16 +9,14 @@ namespace CalcInvest.Core
     public class CalcJurosCompostos
     {
         public double CapitalInicial { get; set; } 
-
         public double ValorMensal { get; set; }
-
         public TaxaDeJuros TaxaDeJuros { get; set; }
-
         public int TempoMeses { get; set; }
+        public double ValorTotalFinal { get; set; }
+        public double ValorTotalInvestido { get; set; }             
 
-        public double ValorFinal { get; set; }
 
-        public CalcJurosCompostos(double capitalInicial, double valorMensal, TaxaDeJuros taxaDeJuros, int tempoMeses)
+        public CalcJurosCompostos(double capitalInicial, TaxaDeJuros taxaDeJuros, double valorMensal,  int tempoMeses)
         {
             CapitalInicial = capitalInicial;
             ValorMensal = valorMensal;
@@ -48,7 +46,9 @@ namespace CalcInvest.Core
                 montante += ValorMensal;
                 totalInvestido += ValorMensal;
             }
-
+            
+            ValorTotalInvestido = totalInvestido;
+            ValorTotalFinal = montante;
             return montante - totalInvestido;
 
         }

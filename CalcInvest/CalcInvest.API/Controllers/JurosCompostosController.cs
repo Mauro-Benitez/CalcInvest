@@ -2,6 +2,7 @@
 using CalcInvest.Application;
 using Microsoft.AspNetCore.Mvc;
 using CalcInvest.Core;
+using CalcInvest.Application.Services.JurosCompostos;
 
 namespace CalcInvest.API.Controllers
 {
@@ -9,24 +10,20 @@ namespace CalcInvest.API.Controllers
     [Route("[controller]")]
     public class JurosCompostosController : Controller
     {
+        private readonly IJurosCompostos _JurosCompostos;
+
+        public JurosCompostosController(IJurosCompostos jurosCompostos)
+        {
+            _JurosCompostos = jurosCompostos;
+        }
 
         [HttpPost("Calcular")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult JurosCompostos([FromBody] JurosCompostoDTO jurosCompostos)
+        public ActionResult JurosCompostos([FromBody] JurosCompostosDTO jurosCompostos)
         {
-            if (jurosCompostos == null) return BadRequest();
+            if (jurosCompostos == null) return BadRequest();          
 
-
-            var taxadeJuros = new TaxaDeJuros(jurosCompostos.TaxaDeJuros, jurosCompostos.AnualouMensal);
-
-            var jurosCompoto = new CalcJurosCompostos(
-                jurosCompostos.CapitalInicial,
-                jurosCompostos.ValorMensal,
-                taxadeJuros,
-                jurosCompostos.TempoMeses
-                );
-
-            var result = jurosCompoto.CalcularJurosCompostos();
+            var result = _JurosCompostos.CalcularJurosCompostos(jurosCompostos);
 
             return Ok(result);
         }

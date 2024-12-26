@@ -1,6 +1,6 @@
 ﻿namespace CalcInvest.Application
 {
-    public class JurosCompostoDTO
+    public class JurosCompostosDTO
     {
 
         public double CapitalInicial { get; set; }
@@ -14,7 +14,7 @@
         public int TempoMeses { get; set; }
 
        
-
+            
 
 
 

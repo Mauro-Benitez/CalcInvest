@@ -1,3 +1,4 @@
+using CalcInvest.Application.Services.JurosCompostos;
 using CalcInvest.Application.Services.JurosSimples;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ITempDataDictionaryFactory, TempDataDictionaryFactory>();
 builder.Services.AddScoped<IJurosSimples, JurosSimplesService>();
+builder.Services.AddScoped<IJurosCompostos, JurosCompostosService>();
 
 
 var app = builder.Build();
