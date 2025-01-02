@@ -4,6 +4,7 @@ using CalcInvest.Application.Services.JurosSimples;
 using CalcInvest.Core;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,7 @@ namespace CalcInvest.Application.Services.JurosCompostos
             return output;
         }
 
-        public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO)
+        public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO, int meses)
         {
             throw new NotImplementedException();
         }

@@ -3,6 +3,8 @@ using CalcInvest.Application;
 using Microsoft.AspNetCore.Mvc;
 using CalcInvest.Core;
 using CalcInvest.Application.Services.JurosCompostos;
+using CalcInvest.Application.Output.JurosSimples;
+using CalcInvest.Application.Output.JurosCompostos;
 
 namespace CalcInvest.API.Controllers
 {
@@ -27,5 +29,20 @@ namespace CalcInvest.API.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("EvolucaoJuros")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<List<EvolucaoJurosCompostosOutput>> JurosSimplesEvolucao([FromBody] JurosCompostosDTO jurosCompostos)
+        {
+            if (jurosCompostos == null) return BadRequest();
+
+            var evolution = _JurosCompostos.EvolucaoJuros(jurosCompostos, jurosCompostos.TempoMeses);
+
+            return Ok(evolution);
+        }
+
+
+
+
     }
 }

@@ -12,7 +12,7 @@ namespace CalcInvest.Application.Services.JurosCompostos
     {
         public JurosCompostosOutput CalcularJurosCompostos(JurosCompostosDTO jurosCompostsDTO);
 
-        public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO);
+        public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO, int meses);
 
 
     }
