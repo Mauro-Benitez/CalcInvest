@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\CalcInvest\\CalcInvest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|c:\\calcinvest\\calcinvest\\calcinvest.core\\calcjuroscompostos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|solutionrelative:calcinvest.core\\calcjuroscompostos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|c:\\calcinvest\\calcinvest\\calcinvest.application\\services\\juroscompostos\\juroscompostosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|solutionrelative:calcinvest.application\\services\\juroscompostos\\juroscompostosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}|CalcInvest.API\\CalcInvest.API.csproj|c:\\calcinvest\\calcinvest\\calcinvest.api\\controllers\\juroscompostoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}|CalcInvest.API\\CalcInvest.API.csproj|solutionrelative:calcinvest.api\\controllers\\juroscompostoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|c:\\calcinvest\\calcinvest\\calcinvest.core\\taxadejuros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|solutionrelative:calcinvest.core\\taxadejuros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|c:\\calcinvest\\calcinvest\\calcinvest.application\\services\\jurossimples\\jurossimplesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|c:\\calcinvest\\calcinvest\\calcinvest.core\\calcjurossimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|solutionrelative:calcinvest.core\\calcjurossimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|c:\\calcinvest\\calcinvest\\calcinvest.core\\calcjuroscompostos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|solutionrelative:calcinvest.core\\calcjuroscompostos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}|CalcInvest.API\\CalcInvest.API.csproj|c:\\calcinvest\\calcinvest\\calcinvest.api\\controllers\\juroscompostoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}|CalcInvest.API\\CalcInvest.API.csproj|solutionrelative:calcinvest.api\\controllers\\juroscompostoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B93ADF82-1CF8-4960-95C9-BE8AFFE03F04}|CalcInvest.API\\CalcInvest.API.csproj|c:\\calcinvest\\calcinvest\\calcinvest.api\\controllers\\jurossimplescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|c:\\calcinvest\\calcinvest\\calcinvest.application\\services\\jurossimples\\ijurossimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|solutionrelative:calcinvest.application\\services\\jurossimples\\ijurossimples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|c:\\calcinvest\\calcinvest\\calcinvest.core\\taxadejuros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{135CE3B8-28F3-4E30-BF78-C09267C65534}|CalcInvest.Core\\CalcInvest.Core.csproj|solutionrelative:calcinvest.core\\taxadejuros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48FBFA8E-5F54-4F13-AD42-FDD406E629C3}|CalcInvest.Application\\CalcInvest.Application.csproj|c:\\calcinvest\\calcinvest\\calcinvest.application\\juroscompostodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,12 +89,25 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 266,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 25,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "JurosCompostosService.cs",
+              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
+              "RelativeDocumentMoniker": "CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
+              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
+              "RelativeToolTip": "CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAASwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T01:02:28.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IJurosSimples.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosSimples\\IJurosSimples.cs",
               "RelativeDocumentMoniker": "CalcInvest.Application\\Services\\JurosSimples\\IJurosSimples.cs",
@@ -107,26 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JurosCompostosService.cs",
-              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
-              "RelativeDocumentMoniker": "CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
-              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
-              "RelativeToolTip": "CalcInvest.Application\\Services\\JurosCompostos\\JurosCompostosService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T01:02:28.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "TaxaDeJuros.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\TaxaDeJuros.cs",
               "RelativeDocumentMoniker": "CalcInvest.Core\\TaxaDeJuros.cs",
               "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\TaxaDeJuros.cs",
               "RelativeToolTip": "CalcInvest.Core\\TaxaDeJuros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T23:21:32.438Z",
               "EditorCaption": ""
@@ -218,25 +218,38 @@
           ]
         },
         {
-          "DockedWidth": 134,
+          "DockedWidth": 375,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CalcJurosSimples.cs",
-              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosSimples.cs",
-              "RelativeDocumentMoniker": "CalcInvest.Core\\CalcJurosSimples.cs",
-              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosSimples.cs",
-              "RelativeToolTip": "CalcInvest.Core\\CalcJurosSimples.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "Title": "JurosCompostosController.cs",
+              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Controllers\\JurosCompostosController.cs",
+              "RelativeDocumentMoniker": "CalcInvest.API\\Controllers\\JurosCompostosController.cs",
+              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Controllers\\JurosCompostosController.cs",
+              "RelativeToolTip": "CalcInvest.API\\Controllers\\JurosCompostosController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T23:15:04.851Z",
+              "WhenOpened": "2024-12-18T01:36:53.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "CalcJurosCompostos.cs",
+              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosCompostos.cs",
+              "RelativeDocumentMoniker": "CalcInvest.Core\\CalcJurosCompostos.cs",
+              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosCompostos.cs",
+              "RelativeToolTip": "CalcInvest.Core\\CalcJurosCompostos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T01:06:09.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "JurosSimplesService.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosSimples\\JurosSimplesService.cs",
               "RelativeDocumentMoniker": "CalcInvest.Application\\Services\\JurosSimples\\JurosSimplesService.cs",
@@ -249,33 +262,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CalcJurosCompostos.cs",
-              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosCompostos.cs",
-              "RelativeDocumentMoniker": "CalcInvest.Core\\CalcJurosCompostos.cs",
-              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosCompostos.cs",
-              "RelativeToolTip": "CalcInvest.Core\\CalcJurosCompostos.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBsAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CalcJurosSimples.cs",
+              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosSimples.cs",
+              "RelativeDocumentMoniker": "CalcInvest.Core\\CalcJurosSimples.cs",
+              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Core\\CalcJurosSimples.cs",
+              "RelativeToolTip": "CalcInvest.Core\\CalcJurosSimples.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T01:06:09.52Z",
+              "WhenOpened": "2024-12-10T23:15:04.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JurosCompostosController.cs",
-              "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Controllers\\JurosCompostosController.cs",
-              "RelativeDocumentMoniker": "CalcInvest.API\\Controllers\\JurosCompostosController.cs",
-              "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Controllers\\JurosCompostosController.cs",
-              "RelativeToolTip": "CalcInvest.API\\Controllers\\JurosCompostosController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T01:36:53.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IJurosCompostos.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Services\\JurosCompostos\\IJurosCompostos.cs",
               "RelativeDocumentMoniker": "CalcInvest.Application\\Services\\JurosCompostos\\IJurosCompostos.cs",
@@ -288,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "JurosSimplesController.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Controllers\\JurosSimplesController.cs",
               "RelativeDocumentMoniker": "CalcInvest.API\\Controllers\\JurosSimplesController.cs",
@@ -301,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EvolucaoJurosSimplesOutput.cs",
               "DocumentMoniker": "C:\\CalcInvest\\CalcInvest\\CalcInvest.Application\\Output\\JurosSimples\\EvolucaoJurosSimplesOutput.cs",
               "RelativeDocumentMoniker": "CalcInvest.Application\\Output\\JurosSimples\\EvolucaoJurosSimplesOutput.cs",
