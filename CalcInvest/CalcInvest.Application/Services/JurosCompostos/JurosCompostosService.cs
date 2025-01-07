@@ -27,9 +27,9 @@ namespace CalcInvest.Application.Services.JurosCompostos
                 jurosCompostsDTO.TempoMeses
             );
 
-            var result = calcJurosCompostos.CalcularJurosCompostos();
+            var toalemJuros = calcJurosCompostos.CalcularJurosCompostos();
 
-            var output = new JurosCompostosOutput(calcJurosCompostos.ValorTotalInvestido, result, calcJurosCompostos.ValorTotalFinal);
+            var output = new JurosCompostosOutput(calcJurosCompostos.ValorTotalInvestido, toalemJuros, calcJurosCompostos.ValorTotalFinal, calcJurosCompostos.JurosMensal);
 
             return output;
         }
@@ -37,7 +37,7 @@ namespace CalcInvest.Application.Services.JurosCompostos
         public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO, int meses)
         {
             var result = new List<EvolucaoJurosCompostosOutput>();
-            for (int i = 1; i <= meses; i++)
+            for (int i = 0; i <= meses; i++)
             {
                 jurosCompostsDTO.TempoMeses = i;
                 var jurosCompostos = CalcularJurosCompostos(jurosCompostsDTO);
@@ -47,7 +47,7 @@ namespace CalcInvest.Application.Services.JurosCompostos
                     new EvolucaoJurosCompostosOutput
                     {
                         Mes = i,
-                        Juros = jurosCompostos.TotalemJuros,
+                        Juros = jurosCompostos.JurosMensal,
                         TotalInvestido = jurosCompostos.ValorTotalInvestido,
                         TotalAcumulado = jurosCompostos.ValorTotalFinal,
                         TotalJuros = jurosCompostos.TotalemJuros

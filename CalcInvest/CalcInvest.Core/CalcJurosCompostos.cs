@@ -12,6 +12,7 @@ namespace CalcInvest.Core
         public double ValorMensal { get; set; }
         public TaxaDeJuros TaxaDeJuros { get; set; }
         public int TempoMeses { get; set; }
+        public double JurosMensal { get; set; }
         public double ValorTotalFinal { get; set; }
         public double ValorTotalInvestido { get; set; }             
 
@@ -37,19 +38,28 @@ namespace CalcInvest.Core
                 taxaDeJurosFinal = Math.Pow(1 + TaxaDeJuros.Porcentagem / 100, 1.0 / 12) - 1;
             }
 
-            double montante = CapitalInicial;
+            double totalAcumulado = 0;
             double totalInvestido = CapitalInicial;
+            double totalJuros = 0;
 
-            for (int i = 0; i < TempoMeses; i++)
+            for (int i = 0; i <= TempoMeses; i++)
             {
-                montante += montante * taxaDeJurosFinal;
-                montante += ValorMensal;
-                totalInvestido += ValorMensal;
+                if (i > 0)
+                {
+                    totalInvestido += ValorMensal;
+                }
+
+                double jurosMensal = totalInvestido * taxaDeJurosFinal;
+                totalJuros +=  jurosMensal;
+                totalAcumulado = totalInvestido + totalJuros;
+                JurosMensal = jurosMensal;
+
+
             }
-            
             ValorTotalInvestido = totalInvestido;
-            ValorTotalFinal = montante;
-            return montante - totalInvestido;
+            ValorTotalFinal = totalAcumulado;
+            
+            return totalAcumulado - totalInvestido;
 
         }
 
