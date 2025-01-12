@@ -42,7 +42,7 @@ namespace CalcInvest.Core
             double totalInvestido = CapitalInicial;
             double totalJuros = 0;
 
-            for (int i = 0; i <= TempoMeses; i++)
+            for (int i = 1; i <= TempoMeses; i++)
             {
                 if (i > 0)
                 {

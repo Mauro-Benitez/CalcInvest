@@ -37,7 +37,7 @@ namespace CalcInvest.Application.Services.JurosCompostos
         public List<EvolucaoJurosCompostosOutput> EvolucaoJuros(JurosCompostosDTO jurosCompostsDTO, int meses)
         {
             var result = new List<EvolucaoJurosCompostosOutput>();
-            for (int i = 0; i <= meses; i++)
+            for (int i = 1; i <= meses; i++)
             {
                 jurosCompostsDTO.TempoMeses = i;
                 var jurosCompostos = CalcularJurosCompostos(jurosCompostsDTO);
