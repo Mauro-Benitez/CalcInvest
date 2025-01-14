@@ -8,16 +8,16 @@ namespace CalcInvest.Core
 {
     public class CalcJurosCompostos
     {
-        public double CapitalInicial { get; set; } 
-        public double ValorMensal { get; set; }
+        public decimal CapitalInicial { get; set; } 
+        public decimal ValorMensal { get; set; }
         public TaxaDeJuros TaxaDeJuros { get; set; }
         public int TempoMeses { get; set; }
-        public double JurosMensal { get; set; }
-        public double ValorTotalFinal { get; set; }
-        public double ValorTotalInvestido { get; set; }             
+        public decimal JurosMensal { get; set; }
+        public decimal ValorTotalFinal { get; set; }
+        public decimal ValorTotalInvestido { get; set; }             
 
 
-        public CalcJurosCompostos(double capitalInicial, TaxaDeJuros taxaDeJuros, double valorMensal,  int tempoMeses)
+        public CalcJurosCompostos(decimal capitalInicial, TaxaDeJuros taxaDeJuros, decimal valorMensal,  int tempoMeses)
         {
             CapitalInicial = capitalInicial;
             ValorMensal = valorMensal;
@@ -26,21 +26,21 @@ namespace CalcInvest.Core
            
         }
 
-        public double CalcularJurosCompostos()
+        public decimal CalcularJurosCompostos()
         {
-            double taxaDeJurosFinal;
+            decimal taxaDeJurosFinal;
             if (TaxaDeJuros.Tipo == "Mensal" || TaxaDeJuros.Tipo == "mensal")
             {
                 taxaDeJurosFinal = TaxaDeJuros.Porcentagem / 100;                
             }
             else
             {               
-                taxaDeJurosFinal = Math.Pow(1 + TaxaDeJuros.Porcentagem / 100, 1.0 / 12) - 1;
+                taxaDeJurosFinal = (decimal)Math.Pow(1 + Convert.ToDouble(TaxaDeJuros.Porcentagem) / 100, 1.0 / 12) - 1;
             }
 
-            double totalAcumulado = 0;
-            double totalInvestido = CapitalInicial;
-            double totalJuros = 0;
+            decimal totalAcumulado = 0;
+            decimal totalInvestido = CapitalInicial;
+            decimal totalJuros = 0;
 
             for (int i = 1; i <= TempoMeses; i++)
             {
@@ -49,7 +49,7 @@ namespace CalcInvest.Core
                     totalInvestido += ValorMensal;
                 }
 
-                double jurosMensal = totalInvestido * taxaDeJurosFinal;
+                decimal jurosMensal = totalInvestido * taxaDeJurosFinal;
                 totalJuros +=  jurosMensal;
                 totalAcumulado = totalInvestido + totalJuros;
                 JurosMensal = jurosMensal;

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CalcInvest.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class JurosSimplesController : Controller
     {
 

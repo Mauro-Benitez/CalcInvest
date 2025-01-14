@@ -9,10 +9,10 @@ namespace CalcInvest.Core
 {
     public class TaxaDeJuros
     {
-        public double Porcentagem { get; set; }
+        public decimal Porcentagem { get; set; }
         public string Tipo { get; set; }      
 
-        public TaxaDeJuros(double porcentagem, string tipo) 
+        public TaxaDeJuros(decimal porcentagem, string tipo) 
         {
             Tipo = tipo;
             Porcentagem = porcentagem;

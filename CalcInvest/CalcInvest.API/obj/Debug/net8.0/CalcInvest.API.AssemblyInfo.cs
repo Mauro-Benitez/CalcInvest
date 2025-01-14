@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalcInvest.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fcc36060eb81319ea61639ccb2e57955065ddd9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57a24fb056fbab325d23ee267495ae34194faa6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalcInvest.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalcInvest.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,10 +9,10 @@ namespace CalcInvest.Application.Output.JurosCompostos
     public class EvolucaoJurosCompostosOutput
     {
         public int Mes{ get; set; }
-        public double Juros { get; set; }
-        public double TotalInvestido { get; set; }
-        public double TotalJuros { get; set; }
-        public double TotalAcumulado { get; set; }
+        public decimal TotalInvestido { get; set; }
+        public decimal Juros { get; set; }       
+        public decimal TotalJuros { get; set; }
+        public decimal TotalAcumulado { get; set; }
 
 
     }

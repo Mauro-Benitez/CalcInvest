@@ -47,8 +47,8 @@ namespace CalcInvest.Application.Services.JurosCompostos
                     new EvolucaoJurosCompostosOutput
                     {
                         Mes = i,
-                        Juros = jurosCompostos.JurosMensal,
                         TotalInvestido = jurosCompostos.ValorTotalInvestido,
+                        Juros = jurosCompostos.JurosMensal,                        
                         TotalAcumulado = jurosCompostos.ValorTotalFinal,
                         TotalJuros = jurosCompostos.TotalemJuros
                     });

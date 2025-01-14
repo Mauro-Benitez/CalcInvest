@@ -9,7 +9,7 @@ using CalcInvest.Application.Output.JurosCompostos;
 namespace CalcInvest.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class JurosCompostosController : Controller
     {
         private readonly IJurosCompostos _JurosCompostos;

@@ -9,18 +9,19 @@ namespace CalcInvest.Application.Output.JurosSimples
     public class JurosSimplesOutput
     {
 
-        public double ValorInicial { get; set; }
+        public decimal TotalInvestido { get; set; }
 
-        public double TotalemJuros { get; set; }
+        public decimal TotalemJuros { get; set; }
 
-        public double ValorTotalFinal { get; }
+        public decimal ValorTotalFinal { get; }
 
-        public JurosSimplesOutput(double valorInicial, double totalEmJuros)
+        public JurosSimplesOutput(decimal valorInicial, decimal totalEmJuros)
         {
 
-            ValorInicial = valorInicial;
-            TotalemJuros = totalEmJuros;
-            ValorTotalFinal = ValorInicial + TotalemJuros;
+            TotalInvestido = Math.Round(valorInicial,2);
+            TotalemJuros = Math.Round(totalEmJuros, 2);
+            ValorTotalFinal = Math.Round(TotalInvestido + TotalemJuros, 2);
+             
         }
 
     }

@@ -46,6 +46,7 @@ namespace CalcInvest.Application.Services.JurosSimples
                     new EvolucaoJurosSimplesOutput
                     {
                         TempoMeses = i,
+                        TotalInvestido = jurosSimplesDTO.CapitalInicial,
                         JurosAcumulados = jurosSimples.TotalemJuros,
                         Total = valorTotal
                     });

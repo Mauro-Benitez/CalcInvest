@@ -10,8 +10,9 @@ namespace CalcInvest.Application.Output.JurosSimples
     {
 
         public int TempoMeses { get; set; }
-        public double JurosAcumulados { get; set; } // Juros acumulados até o período
-        public double Total { get; set; } // Montante total no período
+        public decimal TotalInvestido { get; set; }
+        public decimal JurosAcumulados { get; set; } 
+        public decimal Total { get; set; } 
 
 
 
