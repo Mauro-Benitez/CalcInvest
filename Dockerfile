@@ -11,7 +11,7 @@ RUN dotnet publish CalcInvest/CalcInvest.API/CalcInvest.API.csproj -c Release -o
 
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
-WORKDIR /app
+WORKDIR /App
 COPY --from=build /app/out .
 EXPOSE 80
 
