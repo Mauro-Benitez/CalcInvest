@@ -15,6 +15,13 @@ builder.Services.AddSingleton<ITempDataDictionaryFactory, TempDataDictionaryFact
 builder.Services.AddScoped<IJurosSimples, JurosSimplesService>();
 builder.Services.AddScoped<IJurosCompostos, JurosCompostosService>();
 
+if (!builder.Environment.IsDevelopment())
+{
+    builder.WebHost.ConfigureKestrel(options =>
+    {
+        options.ConfigureEndpointDefaults(lo => lo.UseHttps());
+    });
+}
 
 var app = builder.Build();
 
