@@ -3,7 +3,7 @@ WORKDIR /App
 
 COPY . ./
 
-RUN dotnet restore
+RUN dotnet restore CalcInvest.API/CalcInvest.API.csproj
 
 COPY . ./
 
