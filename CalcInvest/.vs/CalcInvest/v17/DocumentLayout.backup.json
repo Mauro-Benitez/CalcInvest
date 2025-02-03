@@ -93,7 +93,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 93,
+          "DockedWidth": 244,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -106,8 +106,7 @@
               "RelativeToolTip": "CalcInvest.Core\\Enum\\EnumTipo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T00:53:20.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T00:53:20.414Z"
             },
             {
               "$type": "Document",
@@ -117,7 +116,7 @@
               "RelativeDocumentMoniker": "CalcInvest.API\\Program.cs",
               "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\Program.cs",
               "RelativeToolTip": "CalcInvest.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T01:29:20.44Z",
               "EditorCaption": ""
@@ -233,7 +232,7 @@
           ]
         },
         {
-          "DockedWidth": 307,
+          "DockedWidth": 156,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -257,7 +256,7 @@
               "RelativeDocumentMoniker": "CalcInvest.API\\appsettings.json",
               "ToolTip": "C:\\CalcInvest\\CalcInvest\\CalcInvest.API\\appsettings.json",
               "RelativeToolTip": "CalcInvest.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-13T23:48:18.489Z",
               "EditorCaption": ""

@@ -1,7 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-COPY CalcInvest/CalcInvest.API/CalcInvest.API.csproj CalcInvest/CalcInvest.API/
+COPY *.sln ./
+COPY CalcInvest/CalcInvest.API/*.csproj CalcInvest/CalcInvest.API/
 
 RUN dotnet restore CalcInvest/CalcInvest.API/CalcInvest.API.csproj
 
@@ -14,7 +15,8 @@ WORKDIR /app
 
 COPY --from=build /app/out .
 
-EXPOSE 80
-
 ENTRYPOINT ["dotnet", "CalcInvest.API.dll"]
+
+EXPOSE 5000  
+
 
