@@ -1,5 +1,5 @@
 # CalcInvest
-Este API calcula juros simples e juros compostos, alémm de mostrar a evolução do montante ao longo do tempo.
+Este API calcula juros simples e juros compostos, além de mostrar a evolução do montante ao longo do tempo.
 
 # Exemplo Evolução Juros compostos
 Entrada: 
