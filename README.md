@@ -8,4 +8,4 @@ Entrada:
 
 Saida:
 ![image](https://github.com/user-attachments/assets/6096b1e0-bdf8-4fd2-9d4b-72538042f8c6)
-Como o já tinhamos o valor inicial  de 1500, no primeiro mês fazemos o cálulo do valor inicial mais o aporte mensal e assim sucessivamente.
+Como já tinhamos o valor inicial  de 1500, no primeiro mês fazemos o cálulo do valor inicial mais o aporte mensal e assim sucessivamente.
